@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Total Home Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="index.html">Total Home Care</a></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get your free quote today!</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone" required>
+                    
+                    <select required style="font-size: 1.1rem; padding: 1.2rem; height: auto;">
+                        <option value="">Select Service Needed</option>
+                        <option value="grass-cutting">Grass Cutting & Lawn Care</option>
+                        <option value="pressure-cleaning">Pressure Cleaning Services</option>
+                        <option value="removal">Rubble & Furniture Removal</option>
+                        <option value="painting">Interior/Exterior Painting</option>
+                        <option value="renovations">Home Renovations</option>
+                        <option value="multiple">Multiple Services</option>
+                    </select>
+                    
+                    <textarea placeholder="Project Details (please describe what you need)" rows="6"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+                <div class="contact-info" style="background: #f9f9f9; padding: 2rem; border-radius: 10px;">
+                    <h3 style="color: #2c5530; margin-bottom: 1.5rem;">Contact Information</h3>
+                    <p style="margin-bottom: 1rem;">📞 <strong>Phone:</strong> (555) 123-4567</p>
+                    <p style="margin-bottom: 1rem;">✉️ <strong>Email:</strong> info@totalhomecare.com</p>
+                    <p style="margin-bottom: 1rem;">📍 <strong>Service Area:</strong> Your City and surrounding areas</p>
+                    <p style="margin-bottom: 1.5rem;">🕒 <strong>Business Hours:</strong><br>Mon-Fri: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                    
+                    <div style="background: #2c5530; color: white; padding: 1.5rem; border-radius: 5px;">
+                        <h4 style="margin-bottom: 1rem;">Why Choose Us?</h4>
+                        <ul style="list-style: none;">
+                            <li>✅ Free Estimates</li>
+                            <li>✅ Licensed & Insured</li>
+                            <li>✅ Quality Guaranteed</li>
+                            <li>✅ Same-Day Quotes Available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Total Home Care. All rights reserved.</p>
+            <p>Professional Property Services</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will contact you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
